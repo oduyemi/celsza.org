@@ -7,12 +7,12 @@
     font-size:smaller;
 }
 
-.g_divide{
+/* .g_divide{
     background-color: #F8AC4D;
     height: 96px;
     color:#fff;
     position: relative;
-}
+} */
 
 .int{
     margin-top: -3%;
@@ -115,4 +115,13 @@
 
 .live h2{
     display:inline
+}
+
+.give_icons{
+   color: #260970;
+   margin-left: 8%;
+}
+
+#ussd{
+    height:300px !important;
 }

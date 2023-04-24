@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | Christ Embassy Gbagada</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Christ Embassy" content="The official web application for Christ Embassy Church, Lagos sub-zone 1 ">
+    <meta name="author" content="Opeyemi Oduyemi, Emeka Joseph, for frontend and backend respectively">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/headers.css" rel="stylesheet">
+    <link href="assets/dist/css/main.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href="assets/dist/css/slider.css" rel="stylesheet">
+    <link href="assets/dist/css/heroes.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        header{
+          margin-top: -3.4%;
+        }
+
+        .major{
+        padding: 10px;
+        margin: 10px;
+        height: 350px;
+        background-color: #260970;
+    }
+
+        aside {
+        width: 300px;
+        border: 1px solid #260970;
+        padding: 10px;
+        margin: 10px;
+        float: left;
+        }        
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        /* @media screen and (min-width: 320px) {
+        .int{
+          display: none;
+        }
+
+        .more{
+          position: relative;
+          top: -1.5%;
+          font-size: smaller;
+        }
+
+        .home_video video{
+          height: 26vh;
+          position: relative;
+          margin-top: -17%;
+          
+        }
+
+        .new_video{
+          width:38%;
+          height:30vh;
+          margin-top:-6%;
+          position: relative;
+          right:20%;
+        }
+
+        .new_video h2, h4{
+          font-size: smaller;
+        }
+
+        h4{
+          font-weight: 700;
+        }
+
+        #msg{
+          margin-top: 13%;
+        }
+        .te_timer{
+          width:80%;
+          margin:auto;
+        }
+      } */
+      </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </symbol>
+  </svg>
+  <div class="container-fluid">      
+      <main>
+                    <!-- HEADER -->
+        <h1 class="visually-hidden">Header</h1>      
+        <div style="background-color:#260970">
+          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+              <img src="assets/images/logo/logo.png" class="bi me-2 ms-2" width="70" height="32" alt="Sitelogo"/>
+            </a>
+      
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 link-warning">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About
+                </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="pastor.html">Our Pastor</a></li>
+                    <li><a class="dropdown-item" href="vision.html">Our vision</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="faith.html">Our Statement of Faith</a></li>
+                  </ul>
+              </li>              
+              <li><a href="new.html" class="nav-link px-2 link-light">I'm New</a></li>
+              <li><a href="more.html" class="nav-link px-2 link-light">Learn More</a></li>
+              <li><a href="connect.html" class="nav-link px-2 link-light">Connect</a></li>
+              <li><a href="media" class="nav-link px-2 link-light">Media &amp; Resources</a></li>
+            </ul>
+      
+            <div class="col-md-3 text-end me-5">
+              <a href="give.html"  class="btn btn-outline-warning me-2"><i class="fa-solid fa-hand-holding-hand text-secondary">&emsp;</i>Give</a>
+              <a href="login.html" type="button" class="btn btn-warning me-5">Login</a>
+            </div>
+          </header>
+        </div>
+                    <!-- BODY -->
+        <div class="container my-5" style="background-color:#260970;">
+          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+              <h1 class="display-4 fw-bold lh-1 text-warning">Give</h1>
+              <small class="lead text-light">Impacting Lives for Eternity.</small>
+              <p></p>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3" src="assets/images/give.jpg" height="400" alt="" width="400">
+            </div>
+          </div>
+        </div>
+
+          <aside class="row d-md-flex d-none flex-column ms-5 mt-5">
+            <div class="my-3 border-bottom">
+              <p>God <b>owns it all</b></p>
+              <small>Psalm 24:1; Psalm 50:10-12</small>
+            </div>
+            <div class="my-3 border-bottom">
+              <p>God calls us to <b>steward</b> what he has entrusted us with.</p>
+              <small>Matthew 25:14-30</small>
+            </div>
+            <div class="my-3 border-bottom">
+              <p>God calls us to <b>give him our first and best</b>.</p>
+              <small>Genesis 4:3–5; Proverbs 3:8-9</small>
+            </div>
+            <div class="my-3 border-bottom">
+              <p><b>God modelled generosity</b> for us by giving his one and only son, Jesus, to die in our place.</p>
+              <small>John 3:16; 2 Corinthians 8:9</small>
+            </div>
+            <div class="my-3">
+              <p>God calls us to <b>test him in generosity</b> and that he will provide exactly what we need.</p>
+              <small>Malachi 3:10–11; 2 Corinthians 9:11</small>
+            </div>
+          </div>
+        </aside>
+        <div class="row d-flex justify-content-center align-items-center flex-wrap mx-auto">
+        <div class="col-md-4 major ms-5 my-5 text-center text-light">
+          <i class="fa-regular fa-credit-card give_icons"></i>
+          <h3 class="text-warning">Give Online</h3>
+          <p class="my-3 px-5">
+            Online giving is a safe and easy way to invest in all God is doing at the Christ Embassy to create a movement
+            of disciple-making disciples in Lagos and around the world.
+          </p>
+          <div>
+            <a href="#" class="btn btn-outline-warning">Give Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 major me-5 text-center text-light">
+          <i class="fa-regular fa-credit-card give_icons"></i>
+          <h3 class="text-warning">Automate Your Giving</h3>
+          <p class="my-3 px-5">
+            Setting up a recurring gift is a great way to consistently put God first in your finances.
+            Recurring giving is easy and takes just minutes to set up. Simply choose your schedule and amount
+            to automate your giving today with these instructions.
+          </p>
+          <div>
+            <a href="#" class="btn btn-outline-warning">Set up Recurring Gift</a>
+          </div>
+        </div>
+        <div class="col-md-8 major mx-auto text-center text-light" id="ussd">
+          <i class="fa-regular fa-credit-card give_icons"></i>
+          <h3 class="text-warning">Transfer </h3>
+          <p class="my-3 px-5">
+            You can give anytime from anywhere with electronic bank transfer or USSD code.
+          </p>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#accountModal">
+            View Account Details
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="accountModalLabel">Account Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-responsive table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th>Bank</th>
+                        <th>Account Number</th>
+                        <th>Account Name></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>GTBank</td>
+                        <td>0123456789</td>
+                        <td>Christ Embassy Gbagada</td>
+                      </tr>
+                      <tr>
+                        <td>Diamond Bank</td>
+                        <td>0123456789</td>
+                        <td>Christ Embassy Gbagada</td>
+                      </tr>
+                      <tr>
+                        <td>Zenith Bank</td>
+                        <td>0123456789</td>
+                        <td>Christ Embassy Gbagada</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+  
+                            <!-- FOOTER -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted text-text-smaller">&copy; Christ Embassy, Gbagada | Developers - Lambdah Softwares</span>
+          </div>
+      
+          <ul class="nav col-md-4 me-5 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    
+      </main>
+    </div>
+      
+      
+          <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="assets/js/main.js"></script>
+      
+    
+</body>
+</html>
