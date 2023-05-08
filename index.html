@@ -72,42 +72,7 @@
           display: none;
         }
 
-        .more{
-          position: relative;
-          top: -1.5%;
-          font-size: smaller;
-        }
-
-        .home_video video{
-          height: 26vh;
-          position: relative;
-          margin-top: -17%;
-          
-        }
-
-        .new_video{
-          width:38%;
-          height:30vh;
-          margin-top:-6%;
-          position: relative;
-          right:20%;
-        }
-
-        .new_video h2, h4{
-          font-size: smaller;
-        }
-
-        h4{
-          font-weight: 700;
-        }
-
-        #msg{
-          margin-top: 13%;
-        }
-        .te_timer{
-          width:80%;
-          margin:auto;
-        }
+        
       } */
       </style>
 </head>
@@ -174,7 +139,7 @@
 
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="mobile_toggle()">
               <i class="fa fa-bars"></i>
             </a>
           </div>
@@ -332,14 +297,23 @@
             <p class="ms-4 my-5">Pastor &emsp;<!-- fetched from db --><span id="newvideo_info"><i class="fa-solid fa-calendar text-bg-warning"></i> Date <!-- fetched from db --> &emsp; <i class="fa-solid fa-book-bible text-warning"></i> Scriptural Reference</span></p>
             <hr class="">
           </div>
-          <div class="col-4 bg-light">
+          <div class="col-4 bg-light w-100">
             <h4>Recent Message</h4>
             <h2><!-- from db -->Message Title</h2>
             <p class="text-smaller text-info"><!-- from db; if series -->Series Title</p>
           </div>
+        </div>
+        <div class="row bg-light">
           <div class=" col text-center bg-light" id="msg">
-            <a href="#" class="btn btn-warning">Message</a>
-            <a href="#" class="btn btn-outline-warning">Find A Message</a>
+            <form action="" method="">
+              <div class="form-group my-3">
+                <select name="sermon" id="sermon">
+                  <option> - Find a Message -</option>
+                  <option></option>
+                </select>
+                <button type="submit" class="btn btn-outline-warning">Find A Message</button>
+              </div>
+            </form>
           </div>
         </div>
 

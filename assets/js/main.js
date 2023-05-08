@@ -1,4 +1,4 @@
-function myFunction() {
+function mobile_toggle() {
   var x = document.getElementById("navlinks");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -8,7 +8,7 @@ function myFunction() {
 }
 
 
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("May 19, 2023 18:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
