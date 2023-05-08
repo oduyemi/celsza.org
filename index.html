@@ -22,9 +22,7 @@
           -moz-user-select: none;
           user-select: none;
         }
-        header{
-          margin-top: -3.4%;
-        }
+     
 
         @media (min-width: 768px) {
           .bd-placeholder-img-lg {
@@ -128,8 +126,8 @@
   <div class="container-fluid">     
       <main>
                     <!-- HEADER -->     
-        <div style="background-color:#260970">
-          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header">
+        <div style="background-color:#260970" class="head">
+          <header class="d-md-flex d-none align-items-center justify-content-center justify-content-md-between py-3 header">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
               <img src="assets/images/logo/logo.png" class="bi me-2 ms-2" width="70" height="32" alt="Sitelogo"/>
             </a>
@@ -149,8 +147,8 @@
                   </ul>
               </li>              
               <li><a href="new.html" class="nav-link px-2 link-light">I'm New</a></li>
-              <li><a href="more.html" class="nav-link px-2 link-light">Learn More</a></li>
-              <li><a href="connect.html" class="nav-link px-2 link-light">Connect</a></li>
+              <li><a href="teen.html" class="nav-link px-2 link-light">Teenagers</a></li>
+            <li><a href="contact.html" class="nav-link px-2 link-light">Contact</a></li>
               <li><a href="media.html" class="nav-link px-2 link-light">Media &amp; Resources</a></li>
             </ul>
       
@@ -159,6 +157,27 @@
               <a href="login.html" type="button" class="btn btn-lg btn-warning me-5">Sign In</a>
             </div>
           </header>
+                     <!-- Hamburger Menu -->
+          <div class="mobilenav d-md-none d-block">
+            <a href="index.html"><img src="assets/images/logo/logo.png" class="bi me-2 ms-2" width="70" height="32" alt="Sitelogo"/></a>
+            <div id="navlinks">
+              <a href="index.html" class="active">Home</a>
+              <a href="new.html">I&apos;m New</a>
+              <a href="pastor.html">Our Pastor</a>
+              <a href="vision.html">Our Vison</a>
+              <a href="faith.html">Our Statement of Faith</a>
+              <a href="teen.html">Teenagers</a>
+              <a href="contact.html">Contact</a>
+              <a href="media.html" class="nav-link px-2 link-light">Media &amp; Resources</a>
+              <a href="give.html" class="nav-link px-2 link-light">Give</a>
+              <a href="login.html" class="nav-link px-2 link-light">Login</a>
+
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </div>
                     <!-- SLIDER -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -210,7 +229,7 @@
         </div> 
         
                     <!-- INTERJECTION -->
-    <div class="row mx-auto justify-content-center align-items-stretch int">
+    <div class="row mx-auto justify-content-center align-items-stretch int d-md-flex d-none">
       <div class="col-md-3  bg-light int1">
           <h2 class="mt-3">New Here&quest;</h2>
           <p class="text-secondary">Showing up at a new place can be nerve-wracking, so discover what you can expect at Christ Embassy Church.</p>
@@ -234,6 +253,7 @@
           <p class="text-secondary">Find out what&apos;s happening at the Summit.</p>
       </div>
       </div>
+
       <div class="row">
       <div class="col-12" id="maps">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.786800694314!2d3.3879960745155437!3d6.548581593444418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d6c66615db3%3A0xba6237b492441f42!2sChrist%20Embassy%20Gbagada!5e0!3m2!1sen!2sng!4v1682003781969!5m2!1sen!2sng"

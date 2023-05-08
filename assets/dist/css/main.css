@@ -3,6 +3,11 @@
     margin: 0%;
 }
 
+/* footer{
+    position: absolute;
+    bottom: 0%;
+} */
+
 #slider_caption{
     font-size:smaller;
 }
@@ -13,6 +18,47 @@
     color:#fff;
     position: relative;
 } */
+
+.mobilenav {
+    overflow: hidden;
+    background-color: #260970;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .mobilenav #navlinks{
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .mobilenav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .mobilenav a.icon {
+    background: rgb(229, 158, 4);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .mobilenav a:hover {
+    background-color: #ddd;
+    color: #fff;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #260970;
+    color: white;
+  }
 
 .int{
     margin-top: -3%;
@@ -124,4 +170,70 @@
 
 #ussd{
     height:300px !important;
+}
+
+.intro_new{
+    height:200px;
+}
+
+#honoured{
+    color: #260970;
+}
+
+.intro_new span h5{
+    display:inline;
+    font-size: xx-large;
+}
+
+.intro_new span{
+    font-size: xx-large;
+}
+
+.church_icon{
+    color:#260970;
+    font-size: x-large;
+}
+
+.tall{
+    font-size: larger;
+}
+
+.head{
+    margin-top: -3.4%;
+  }
+
+.intro_header{
+    height:480px;
+    background-image: url("../../images/new.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.display{
+    color: #260970;
+}
+
+.bluebg{
+    background-color: #260970;
+}
+
+
+.blue{
+    color: #260970;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .mediabox{
+        margin-top: 40%;
+    }
+
+    .head{
+        margin-top: -3% !important;
+      }
 }

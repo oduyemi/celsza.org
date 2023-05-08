@@ -1,3 +1,13 @@
+function myFunction() {
+  var x = document.getElementById("navlinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
 var x = setInterval(function() {
